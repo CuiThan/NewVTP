@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trang chủ</title>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" media="all" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/wow.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/select2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+</head>
+<body class="vtp-body">
+
+    <!--_________________________________________________________Header____________________________________________________________-->
+    <div class="vtp-mobile-menu-overlay dts-hide-pc"></div>
+    <div class="vtp-header-left-block">
+        <img class="vtp-header-left-block-logo" src="images/logoNormal.png" alt="logo">
+        <ul class="clearfix">
+            <li>
+                <a class="active">Trang chủ</a>
+            </li>
+            <li>
+                <a>Dịch vụ</a>
+            </li>
+            <li>
+                <a>Hỗ trợ</a>
+            </li>
+            <li>
+                <a data-toggle="modal" data-target="#vtpLogin">
+                    Đăng nhập
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="vtp-header col-xs-12">
+        <div class="vtp-header-mobile row">
+            <a class="vtp-mobile-menu-icon" href="javascript:void(0)">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a class="dts-header-left-block-logo-mobile" href="javascript:void(0)">
+                <img class="dts-header-left-block-logo" src="images/logoNormal.png" alt="logo">
+            </a>
+            <a class="btn btn-login-mobile">Đăng ký</a>
+        </div>
+        <div class="vtp-header-left">
+            <img class="dts-header-left-block-logo" src="images/logoNormal.png" alt="logo" />
+        </div>
+        <div class="vtp-header-middle">
+            <ul class="clearfix">
+                <li>
+                    <a class="active">Trang chủ</a>
+                </li>
+                <li>
+                    <a>Dịch vụ</a>
+                </li>
+                <li>
+                    <a>Hỗ trợ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="vtp-header-right">
+            <ul class="clearfix">
+                <li class="hotline">
+                    <span class="clearfix">Hot line</span>
+                    <a href="callto:19008095">19008095</a>
+                </li>
+                <li class="personal-login">
+                    <img src="images/icon/ViewFront/login.svg" /><a data-toggle="modal" data-target="#vtpLogin">Đăng nhập</a>
+                </li>
+                <li>
+                    <a class="btn btn-login hvr-bounce-to-right">Đăng ký sử dụng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="vtp-wrap-content">
+        <!--___________________________________________________Slider______________________________________________________________-->
+        <div class="vtp-slider">
+            <div class="item">
+                <img class="img-responsive" src="images/bgSlide1.png" alt="slide-image" />
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/bgSlide2.png" alt="slide-image" />
+            </div>
+        </div>
+        <!--__________________________________________White box in the middle of Slider and Service List___________________________-->
+        <div class="vtp-wrap-box-item clearfix wow fadeIn">
+            <div class="box-item col-xs-12 col-sm-12 col-md-4">
+                <img class="img-responsive" src="images/icon/ViewFront/1.png" alt="box-item-image" />
+                <span class="title">Kiểm tra đơn hàng</span>
+                <input class="form-control input-check1" placeholder="Mã theo dõi đơn hàng" />
+            </div>
+            <div class="box-item col-xs-12 col-sm-12 col-md-4">
+                <img class="img-responsive" src="images/icon/ViewFront/2.png" alt="box-item-image" />
+                <div class="clear-0"></div>
+                <span class="title">Kiểm tra phí vận chuyển</span>
+                <div class="clear-0"></div>
+                <div class="item">
+                    <input type="radio" id="test1" name="radio-group">
+                    <label class="item-package" for="test1">Hàng hóa</label>
+                </div>
+                <div class="item">
+                    <input type="radio" id="test2" name="radio-group">
+                    <label class="item-mail" for="test2">Thư</label>
+                </div>
+                <div class="clear-0"></div>
+                <div class="item-details" for="test1">
+                    <input class="form-control input-1" placeholder="Điểm nhận hàng" />
+                    <a class="arrow">
+                        <img class="img-responsive" src="images/arrow-down-348Normal.png" alt="box-item-image" />
+                    </a>
+                    <input class="form-control input-2" placeholder="Điểm đến" />
+                    <input class="form-control input-3" placeholder="Khối lượng" />
+                    <div class="input-group">
+                        <input type="text" class="long form-control" placeholder="Dài (cm)">
+                        <input type="text" class="width form-control" placeholder="Rộng (cm)">
+                        <input type="text" class="height form-control" placeholder="Cao (cm)">
+
+                    </div>
+                    <select class="select-services form-control">
+                        <option>
+                            Select an option
+                        </option>
+                        <option>
+                            Option 1
+                        </option>
+                        <option>
+                            Option 2
+                        </option>
+                        <option>
+                            Option 3
+                        </option>
+                        <option>
+                            Option 4
+                        </option>
+                    </select>
+                    <div class="button-bar inline">
+
+                        <div class="checkAmount">
+                            <span>Chi phí vận chuyển tạm tính</span>
+                            <div class="clear-0"></div>
+                        </div>
+                        <a class="btn btn-check">Kiểm tra</a>
+                        <a class="amount">130.000đ</a>
+                        <a class="btn btn-create">Tạo đơn hàng</a>
+                    </div>
+                    <a class="close-popup"><i class="fa fal fa-arrow-alt-circle-up"></i></a>
+                </div>
+                <div class="item-details" for="test2">
+                    <input class="form-control input-1" placeholder="Điểm nhận hàng" />
+                    <a class="arrow">
+                        <img class="img-responsive" src="images/arrow-down-348Normal.png" alt="box-item-image" />
+                    </a>
+                    <input class="form-control input-2" placeholder="Điểm đến" />
+                    <input class="form-control input-3" placeholder="Khối lượng" />
+                    <div class="input-group">
+                        <input type="text" class="long form-control" placeholder="Dài (cm)">
+                        <input type="text" class="width form-control" placeholder="Rộng (cm)">
+                        <input type="text" class="height form-control" placeholder="Cao (cm)">
+
+                    </div>
+                    <select class="select-services form-control">
+                        <option>
+                            Select an option
+                        </option>
+                        <option>
+                            Option 1
+                        </option>
+                        <option>
+                            Option 2
+                        </option>
+                        <option>
+                            Option 3
+                        </option>
+                        <option>
+                            Option 4
+                        </option>
+                    </select>
+                    <div class="button-bar inline">
+
+                        <div class="checkAmount">
+                            <span>Chi phí vận chuyển tạm tính</span>
+                            <div class="clear-0"></div>
+                        </div>
+                        <a class="btn btn-check">Kiểm tra</a>
+                        <a class="amount">130.000đ</a>
+                        <a class="btn btn-create">Tạo đơn hàng</a>
+                    </div>
+                    <a class="close-popup"><i class="fa fal fa-arrow-alt-circle-up"></i></a>
+                </div>
+            </div>
+            <div class="box-item col-xs-12 col-sm-12 col-md-4">
+                <img class="img-responsive" src="images/icon/ViewFront/3.png" alt="box-item-image" />
+                <span class="title">Tìm kiếm bưu cục</span>
+                <input class="form-control input-check3" placeholder="Vị trí của bạn" />
+
+            </div>
+        </div>
+
+    </div>
+    <div class="clear-0"></div>
+
+    <!--________________________________________________________List service section _______________________________________________-->
+    <div class="vtp-services">
+        <div class="container no-padding">
+            <h2 class="title wow fadeIn"> Dịch vụ nổi bật</h2>
+            <div class="description wow fadeInLeft">
+                Các bưu gửi thông qua chuyển phát nhanh không chỉ được đảm bảo về tốc độ và còn được đảm bảo về độ an toàn nếu địa chỉ người nhận chính xác , bưu phẩm sẽ được giao tận tay . có chũ ký , họ tên của người đã nhận và thời gian nhận
+            </div>
+            <div class="list-item row">
+                <div class="box col-xs-12 col-sm-6 col-md-3 wow bounceInLeft">
+                    <a href="#">
+                        <div class="content hvr-sweep-to-left">
+                            <div class="image">
+                                <img class="img-responsive green-rec" src="images/rec1.png" alt="box-item-image" />
+                                <img class="img-responsive white-oval" src="images/oval2.png" alt="box-item-image" />
+                                <img class="img-responsive green-oval" src="images/oval1.png" alt="box-item-image" />
+                            </div>
+                            <div class="description">
+                                Dịch vụ hoả tốc
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="box col-xs-12 col-sm-6 col-md-3 wow bounceInLeft">
+                    <a>
+                        <div class="content hvr-sweep-to-top">
+
+                            <div class="image">
+                                <img class="img-responsive green-rec" src="images/rec1.png" alt="box-item-image" />
+                                <img class="img-responsive white-oval" src="images/oval2.png" alt="box-item-image" />
+                                <img class="img-responsive green-oval" src="images/oval1.png" alt="box-item-image" />
+                            </div>
+                            <div class="description">
+                                Chuyển liên tỉnh
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="box col-xs-12 col-sm-6 col-md-3 wow bounceInRight">
+                    <a>
+                        <div class="content hvr-sweep-to-bottom">
+
+                            <div class="image">
+                                <img class="img-responsive green-rec" src="images/rec1.png" alt="box-item-image" />
+                                <img class="img-responsive white-oval" src="images/oval2.png" alt="box-item-image" />
+                                <img class="img-responsive green-oval" src="images/oval1.png" alt="box-item-image" />
+                            </div>
+                            <div class="description">
+                                Dịch vụ chuyển phát quốc tế
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="box col-xs-12 col-sm-6 col-md-3 wow bounceInRight">
+                    <a>
+                        <div class="content hvr-sweep-to-right">
+                            <div class="image">
+                                <img class="img-responsive green-rec" src="images/rec1.png" alt="box-item-image" />
+                                <img class="img-responsive white-oval" src="images/oval2.png" alt="box-item-image" />
+                                <img class="img-responsive green-oval" src="images/oval1.png" alt="box-item-image" />
+                            </div>
+                            <div class="description">
+                                Dịch Vụ Phát Hàng Thu Tiền (COD)
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="clear-40"></div>
+            <a class="btn btn-view-all hvr-underline-from-right">Xem toàn bộ dịch vụ</a>
+        </div>
+    </div>
+    <div class="clear-0"></div>
+    <!--________________________________________________________Download apps section_______________________________________________-->
+    <div class="vtp-download-app">
+        <div class="container">
+            <div class="content">
+                <h2 class="title wow fadeInRight">Tải về ứng dụng trên nền tảng di động</h2>
+                <span class="description wow flipInX">
+                    Bạn sẽ nhận được những thông báo quá trình vận chuyển hàng của bạn đang trong giai đoạn nào . Bạn sẽ cảm thấy yên tâm hơn về chuyến hàng và bạn có thể báo cáo ngay lập tức để chúng tôi khắc phục sự cố và giúp bạn sớm nhận được hàng
+                </span>
+                <div class="clear-0"></div>
+                <div class="list-app wow bounceInLeft">
+                    <a>
+                        <img class="img-responsive" src="images/AppleStoreNormal.png" alt="apple-app" />
+                    </a>
+                    <a>
+                        <img class="img-responsive" src="images/GooglePlayNormal.png" alt="google-play" />
+                    </a>
+                </div>
+                <div class="clear-0"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear-0"></div>
+    <!--________________________________________________________Support chat bot section____________________________________________-->
+    <div class="vtp-chat-bot">
+        <div class="container">
+            <div class="col-xs-12 col-sm-6 left-content">
+                <h2 class="title wow fadeInLeft">Hỗ trợ tạo đơn hàng qua Chatbot</h2>
+                <div class="clear-20"></div>
+                <span class="description wow fadeInLeft">
+                    Bạn sẽ nhận được những thông báo quá trình vận chuyển hàng của bạn đang trong giai đoạn nào . Bạn sẽ cảm thấy yên tâm hơn về chuyến hàng và bạn có thể báo cáo ngay lập tức để chúng tôi khắc phục sự cố và giúp bạn sớm nhận được hàng
+                </span>
+                <div class="clear-0"></div>
+                <a class="btn btn-trial hvr-bounce-to-right wow fadeInUp">Dùng thử ngay</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 right-content wow bounceInRight">
+                <img class="img-responsive" src="images/bg-chatbot2.png" alt="chatbot" />
+            </div>
+        </div>
+
+    </div>
+    <div class="clear-0"></div>
+
+    <!--_______________________________________________________Group________________________________________________________________-->
+    <div class="vtp-group">
+        <div class="container">
+            <div class="content">
+                <h2 class="title wow fadeIn">Điều chuyển từ tài liệu cho doanh nghiệp</h2>
+                <div class="description wow fadeInLeftBig">
+                    Khi bạn phải chuyển quá nhiều đơn hàng ở mỗi trụ sở và không thể kiếm soát nổi , bạn gặp bối rối . Đã có chúng tôi giải quyết vấn đề đó cho bạn . Quản lý đơn hàng cũng như quản lý dòng tiền giúp bạn dễ dàng hơn trong kinh doanh
+                </div>
+                <div class="clear-0"></div>
+                <a class="btn btn-readmore hvr-bounce-to-right wow fadeInUp">Xem thêm</a>
+            </div>
+        </div>
+    </div>
+    <div class="clear-0"></div>
+
+    <!--______________________________________________________Footer top____________________________________________________________-->
+    <div class="vtp-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 intro">
+                    <img class="img-responsive hidden-sm hidden-xs" src="images/ViettelPostNormal_1.png" alt="logoViettelPost" />
+                    <ul class="social-item">
+                        <li>
+                            <a>
+                                <img class="img-responsive" src="images/facebook.png" alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="img-responsive" src="images/twitter.png" alt="twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="img-responsive" src="images/insta.png" alt="instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear-0"></div>
+                    <div class="description hidden-sm hidden-xs">
+                        Viettel Post là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh hàng hoá, bưu kiện trong nước, quốc tế tại Việt Nam. Với mạng lưới khắp 63 tỉnh thành trong nước
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="small-title">Trợ giúp</h4>
+                    <ul class="footer-list-item">
+                        <li>
+                            <a>Đăng ký đại lý thu gom  </a>
+                        </li>
+                        <li>
+                            <a>
+                                Tư vấn dịch vụ
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Vận tải nguyên chuyển
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="small-title">Dịch vụ</h4>
+                    <ul class="footer-list-item">
+                        <li class="hot">
+                            <a>Dịch vụ vận tải</a>
+                        </li>
+                        <li>
+                            <a>Đăng ký đại lý thu gom  </a>
+                        </li>
+                        <li>
+                            <a>
+                                Tư vấn dịch vụ
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Vận tải nguyên chuyển
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 email-address">
+                    <h4 class="big-title">Đăng ký để nhận những thông tin mới nhất</h4>
+                    <div class="info">
+                        Để lại email của bạn để chúng tôi có thể gửi cho bạn những thông tin về ứng dụng cũng như các bài viết
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Nhập email của bạn" />
+                        <a><img class="img-responsive" src="images/Group22Normal.png" alt="email icon" /></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clear-0"></div>
+
+    <!--______________________________________________________Footer bottom_________________________________________________________-->
+    <div class="vtp-footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-left">
+                <a class="hotline" href="callto:19008095">
+                    Hotline: 19008095
+                </a>
+                <a>
+                    Khiếu nại
+                </a>
+            </div>
+            <div class="footer-bottom-right">
+                <span>
+                    Copyright © 2018 BeauAgency. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <!--_______________________________________________________________________________________________________________________-->
+
+</body>
+
+</html>
+<script type="text/javascript">
+    $(".vtp-slider").slick({
+        autoplay: true,
+        infinite: true
+    });
+</script>

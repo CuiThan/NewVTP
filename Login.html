@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập</title>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/hover.css" rel="stylesheet" media="all" />
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link href="css/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <script src="scripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.matchHeight.js" type="text/javascript"></script>
+    <script src="scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/wow.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/select2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+</head>
+<body class="vtp-body">
+
+    <!--_________________________________________________________________________________________________________________-->
+    <div class="vtp-mobile-menu-overlay dts-hide-pc"></div>
+
+    <div class="vtp-header-left-block">
+
+        <img class="vtp-header-left-block-logo" src="images/logoNormal.png" alt="logo">
+        <ul class="clearfix">
+            <li>
+                <a class="active">Trang chủ</a>
+            </li>
+            <li>
+                <a>Dịch vụ</a>
+            </li>
+            <li>
+                <a>Hỗ trợ</a>
+            </li>
+            <li>
+                <a>
+                    Đăng nhập
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="vtp-header col-xs-12">
+
+        <div class="vtp-header-mobile row">
+            <a class="vtp-mobile-menu-icon" href="javascript:void(0)">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a class="dts-header-left-block-logo-mobile" href="javascript:void(0)">
+                <img class="dts-header-left-block-logo" src="images/logoNormal.png" alt="logo">
+            </a>
+            <a class="btn btn-login-mobile">Đăng ký</a>
+        </div>
+        <div class="vtp-header-left">
+            <img class="dts-header-left-block-logo" src="images/logoNormal.png" alt="logo" />
+        </div>
+        <div class="vtp-header-middle">
+            <ul class="clearfix">
+                <li>
+                    <a class="active">Trang chủ</a>
+                </li>
+                <li>
+                    <a>Dịch vụ</a>
+                </li>
+                <li>
+                    <a>Hỗ trợ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="vtp-header-right">
+            <ul class="clearfix">
+                <li class="hotline">
+                    <span class="clearfix">Hot line</span>
+                    <a href="callto:19008095">19008095</a>
+                </li>
+                <li class="personal-login">
+                    <img src="images/icon/ViewFront/login.svg" /><a>Đăng nhập</a>
+                </li>
+                <li>
+                    <a class="btn btn-login hvr-bounce-to-right">Đăng ký sử dụng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear-top"></div>
+    <!--___________________________________________Login box________________________________________________________-->
+    <div class="login-container">
+        <div class="wrap-content-login">
+            <!--___________________________________________________Popup Login_____________________________________________________-->
+            <div class="vtp-login vtp-login-first" id="vtpLogin">
+                <!--_______________________________________________B1: Đăng nhập viettelPost__________________________________________-->
+                <div class="first-step">
+                    <h2 class="title">Đăng nhập ViettelPost</h2>
+                    <a class="btn btn-login-mobile">Đăng nhập bằng điện thoại</a>
+                    <div class="description">
+                        Hoặc dùng app <a class="vtp-link">ViettelPost</a> quét mã để đăng nhập
+                    </div>
+                    <div class="vtp-qr-code">
+                        <img class="img-responsive" src="images/qrcode.png" alt="qrcode" />
+                    </div>
+                    <div class="vtp-apps">
+                        <a>
+                            <img class="img-responsive" src="images/AppleStoreNormal.png" alt="apple-app" />
+                        </a>
+                        <a>
+                            <img class="img-responsive" src="images/GooglePlayNormal.png" alt="google-play" />
+                        </a>
+                    </div>
+                    <div class="clear-20"></div>
+                    <span class="already-have-acc">Bạn đã có tài khoản ViettelPost?</span>
+                    <a class="btn btn-login-account">Đăng nhập bằng tài khoản</a>
+                </div>
+
+            </div>
+            <div class="clear-20"></div>
+            <!--____________________________________________B2: Đăng nhập điện thoại (Nhập số điện thoại) ________________________-->
+            <div class="vtp-login vtp-login-second-mobile">
+                <div class="second-step-mobile">
+                    <a class="btn btn-back-step"></a>
+                    <h2 class="title">Nhập số điện thoại</h2>
+                    <div class="input-group">
+                        <input class="form-control postcode" value="+84" />
+                        <input class="form-control tele-number" type="number" placeholder="Nhập số điện thoại" />
+                    </div>
+                    <a class="btn btn-continue-step">Tiếp tục</a>
+                </div>
+            </div>
+
+            <div class="clear-20"></div>
+            <!--____________________________________________B2: Đăng nhập điện thoại (Nhập OTP)_______________________________-->
+            <div class="vtp-login vtp-login-second-mobile-otp">
+                <div class="second-step-mobile otp">
+                    <a class="btn btn-back-step"></a>
+                    <h2 class="title">Nhập mã OTP</h2>
+                    <div class="message">Mã xác nhận 4 chữ số chúng tôi đã gửi đến số điện thoại <b>01659 013 874</b></div>
+                    <div class="clear-20"></div>
+                    <a class="resend-otp hvr-icon-spin"><i class="fas fa-sync hrv-icon"></i> Gửi lại mã</a>
+                    <div class="form-input otp-number">
+                        <input class="form-control otp-input" maxlength="1" />
+                        <input class="form-control otp-input" maxlength="1" />
+                        <input class="form-control otp-input" maxlength="1" />
+                        <input class="form-control otp-input" maxlength="1" />
+                    </div>
+                    <a class="btn-input-password">Hãy nhập mật khẩu</a>
+                    <div class="clear-20"></div>
+                    <a class="btn btn-login">Đăng nhập</a>
+                </div>
+            </div>
+
+            <div class="clear-20"></div>
+            <!--____________________________________________B3:Form đăng nhập tài khoản ____________________________________________-->
+            <div class="vtp-login vtp-login-form">
+                <div class="login-account-form">
+                    <a class="btn btn-back-step"></a>
+                    <h2 class="title">Đăng nhập tài khoản</h2>
+                    <div class="form-group clearfix">
+                        <input type="text" class="form-control" placeholder="Số điện thoại hoặc email" />
+                        <input type="password" class="form-control vtp-password" placeholder="Mật khẩu" />
+                        <a class="show-password"></a>
+                    </div>
+                    <div class="under-form">
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Ghi nhớ</label>
+                        </div>
+                        <a class="forget-password">Quên mật khẩu</a>
+                    </div>
+                    <div class="clear-40"></div>
+                    <a class="btn btn-login-complete">Hoàn thành</a>
+                    <div class="message">
+                        Hoặc đăng nhập bằng
+                    </div>
+                    <div class="other-login">
+                        <a>
+                            <img class="img-responsive" src="images/login-fb.png" alt="login-facebook" />
+                        </a>
+                        <a>
+                            <img class="img-responsive" src="images/login-gg.png" alt="login-google" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear-0"></div>
+            <div class="clear-20"></div>
+            <!--____________________________________________B2: Đăng nhập điện thoại (Nhập mật khẩu) ____________________________________________-->
+            <div class="vtp-login vtp-login-mobile-psw">
+                <div class="second-step-account">
+                    <a class="btn btn-back-step"></a>
+                    <h2 class="title">Nhập mật khẩu</h2>
+                    <div class="form-group clearfix">
+                        <input type="password" class="form-control vtp-password" placeholder="Mật khẩu" />
+                        <a class="show-password"></a>
+                    </div>
+                    <div class="under-form">
+                        <a class="login-otp"> Hoặc nhập OTP</a>
+                        <a class="forget-password">Quên mật khẩu</a>
+                        <div class="clear-0"></div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Ghi nhớ</label>
+                        </div>
+                    </div>
+                    <div class="clear-40"></div>
+                    <a class="btn btn-login">Đăng nhập</a>
+                </div>
+            </div>
+
+            <div class="clear-20"></div>
+            <!--____________________________________________B2: Đăng ký tài khoản (Nhập mật khẩu) ____________________________________________-->
+            <div class="vtp-login vtp-create-password">
+                <div class="second-step-account">
+                    <a class="btn btn-back-step"></a>
+                    <h2 class="title">Đặt mật khẩu</h2>
+                    <div class="form-group clearfix">
+                        <input type="password" class="form-control vtp-password" placeholder="Mật khẩu" />
+                        <a class="show-password"></a>
+                    </div>
+                    <div class="under-form">
+                        <a class="login-otp"> Hoặc nhập OTP</a>
+                        <a class="forget-password">Quên mật khẩu</a>
+                        <div class="clear-0"></div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Ghi nhớ</label>
+                        </div>
+                    </div>
+                    <div class="clear-40"></div>
+                    <a class="btn btn-login">Đăng nhập</a>
+                </div>
+            </div>
+            <div class="clear-0"></div>
+            <div class="clear-20"></div>
+            <!--____________________________________________B2: Đăng nhập tài khoản (Điền thông tin cá nhân) ____________________________________________-->
+            <div class="vtp-login vtp-personal-info">
+                <div class="second-step-account personal-info">
+                    <a class="btn btn-back-step"></a>
+                    <h2 class="title">Thông tin cá nhân</h2>
+                    <div class="form-group username clearfix">
+                        <input type="text" class="form-control first-name" placeholder="Nhập họ" />
+                        <input type="text" class="form-control last-name" placeholder="Nhập tên" />
+                    </div>
+
+                    <div class="form-group email clearfix">
+                        <input type="email" class="form-control email-address" placeholder="Nhập email" />
+                    </div>
+                    <div class="clear-20"></div>
+                    <div class="term-and-condition">
+                        <input type="checkbox" id="cb1" /><label for="cb1">Tôi đồng ý với điều khoản và chính sách bảo mật</label>
+                    </div>
+                    <div class="clear-40"></div>
+                    <a class="btn btn-login-complete disabled">Hoàn thành</a>
+                </div>
+            </div>
+            <div class="clear-0"></div>
+        </div>
+
+    </div>
+    <div class="clear-20"></div>
+    <div class="vtp-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 intro">
+                    <img class="img-responsive hidden-sm hidden-xs" src="images/ViettelPostNormal_1.png" alt="logoViettelPost" />
+                    <ul class="social-item">
+                        <li>
+                            <a>
+                                <img class="img-responsive" src="images/facebook.png" alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="img-responsive" src="images/twitter.png" alt="twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img class="img-responsive" src="images/insta.png" alt="instagram" />
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear-0"></div>
+                    <div class="description hidden-sm hidden-xs">
+                        Viettel Post là doanh nghiệp hàng đầu cung cấp dịch vụ chuyển phát nhanh hàng hoá, bưu kiện trong nước, quốc tế tại Việt Nam. Với mạng lưới khắp 63 tỉnh thành trong nước
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="small-title">Trợ giúp</h4>
+                    <ul class="footer-list-item">
+                        <li>
+                            <a>Đăng ký đại lý thu gom  </a>
+                        </li>
+                        <li>
+                            <a>
+                                Tư vấn dịch vụ
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Vận tải nguyên chuyển
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <h4 class="small-title">Dịch vụ</h4>
+                    <ul class="footer-list-item">
+                        <li class="hot">
+                            <a>Dịch vụ vận tải</a>
+                        </li>
+                        <li>
+                            <a>Đăng ký đại lý thu gom  </a>
+                        </li>
+                        <li>
+                            <a>
+                                Tư vấn dịch vụ
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                Vận tải nguyên chuyển
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 email-address">
+                    <h4 class="big-title">Đăng ký để nhận những thông tin mới nhất</h4>
+                    <div class="info">
+                        Để lại email của bạn để chúng tôi có thể gửi cho bạn những thông tin về ứng dụng cũng như các bài viết
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Nhập email của bạn" />
+                        <a><img class="img-responsive" src="images/Group22Normal.png" alt="email icon" /></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="clear-0"></div>
+    <div class="vtp-footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-left">
+                <a class="hotline" href="callto:19008095">
+                    Hotline: 19008095
+                </a>
+                <a>
+                    Khiếu nại
+                </a>
+            </div>
+            <div class="footer-bottom-right">
+                <span>
+                    Copyright © 2018 BeauAgency. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <!--_______________________________________________________________________________________________________________________-->
+
+</body>
+
+</html>
+<script type="text/javascript">
+    $(".vtp-list-service-item").slick({
+        //autoplay: true,
+        infinite: true,
+        slidesToShow: 4,
+        responsive: [
+    {
+        breakpoint: 1024,
+        settings: {
+            slidesToShow: 3,
+        }
+    },
+    {
+        breakpoint: 767,
+        settings: {
+            slidesToShow: 2,
+        }
+    },
+    {
+        breakpoint: 480,
+        settings: {
+            slidesToShow: 1,
+        }
+    }
+        ]
+    });
+    $('.vtp-list-service-tab .item').matchHeight();
+</script>
